@@ -2,6 +2,22 @@ import React from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import GameTiles from './Components/GameTiles'
+
+const images = [
+  "/assets/images/totadile.png",
+  "/assets/images/squirtle.png",
+  "/assets/images/pikachu.png",
+  "/assets/images/psyduck.png",
+  "/assets/images/phampy.png",
+  "/assets/images/munchlax.png",
+  "/assets/images/jirachi.png",
+  "/assets/images/fenekin.png",
+  "/assets/images/charmander.png",
+  "/assets/images/charizard.png",
+  "/assets/images/bulbasaur.png",
+  "/assets/images/blastoise.png"
+];
 
 function App() {
   return (
@@ -25,7 +41,9 @@ function App() {
           Let's see how high you can go!
         </p>
       </Jumbotron>
-      <div id="game"></div>
+
+      {/* Div which will contain the game on page load. */}
+      <GameTiles images={images}/>
     </div>
   );
 }
