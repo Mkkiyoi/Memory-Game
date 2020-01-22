@@ -2,22 +2,10 @@ import React from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import GameTiles from './Components/GameTiles'
+import GameTiles from './Components/GameTiles';
 
-const images = [
-  "/assets/images/totadile.png",
-  "/assets/images/squirtle.png",
-  "/assets/images/pikachu.png",
-  "/assets/images/psyduck.png",
-  "/assets/images/phampy.png",
-  "/assets/images/munchlax.png",
-  "/assets/images/jirachi.png",
-  "/assets/images/fenekin.png",
-  "/assets/images/charmander.png",
-  "/assets/images/charizard.png",
-  "/assets/images/bulbasaur.png",
-  "/assets/images/blastoise.png"
-];
+
+
 
 function App() {
   return (
@@ -27,7 +15,7 @@ function App() {
         <Navbar.Brand href="#home">Memory Game!</Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Navbar.Text>
-            Score: <span id="score"></span> | Top Score: <span id="top-score"></span>
+            Score: <span id="score">0</span> | High Score: <span id="high-score">0</span>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
@@ -43,7 +31,7 @@ function App() {
       </Jumbotron>
 
       {/* Div which will contain the game on page load. */}
-      <GameTiles images={images}/>
+      <GameTiles />
     </div>
   );
 }
