@@ -10,51 +10,51 @@ class GameTiles extends Component {
     highScore: 0,
     images : [
       {
-        src: "/assets/images/totadile.png",
+        src: "./assets/images/totadile.png",
         picked: false
       },
       {
-        src: "/assets/images/squirtle.png",
+        src: "./assets/images/squirtle.png",
         picked: false
       },
       {
-        src: "/assets/images/pikachu.png",
+        src: "./assets/images/pikachu.png",
         picked: false
       },
       {
-        src: "/assets/images/psyduck.png",
+        src: "./assets/images/psyduck.png",
         picked: false
       },
       {
-        src: "/assets/images/phampy.png",
+        src: "./assets/images/phampy.png",
         picked: false
       },
       {
-        src: "/assets/images/munchlax.png",
+        src: "./assets/images/munchlax.png",
         picked: false
       },
       {
-        src: "/assets/images/jirachi.png",
+        src: "./assets/images/jirachi.png",
         picked: false
       },
       {
-        src: "/assets/images/fenekin.png",
+        src: "./assets/images/fenekin.png",
         picked: false
       },
       {
-        src: "/assets/images/charmander.png",
+        src: "./assets/images/charmander.png",
         picked: false
       },
       {
-        src: "/assets/images/charizard.png",
+        src: "./assets/images/charizard.png",
         picked: false
       },
       {
-        src: "/assets/images/bulbasaur.png",
+        src: "./assets/images/bulbasaur.png",
         picked: false
       },
       {
-        src: "/assets/images/blastoise.png",
+        src: "./assets/images/blastoise.png",
         picked: false
       }
     ]
