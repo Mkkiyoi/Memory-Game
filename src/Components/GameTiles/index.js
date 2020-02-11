@@ -74,6 +74,9 @@ class GameTiles extends Component {
     // Make a copy of the high score in the current state.
     let updatedHighScore = this.state.highScore;
 
+    // Store the banner text displayed to user about the choice they made.
+    let bannerText = "";
+
     // Check if the image has already been picked.
     if (updatedImages[index].picked) {
 
@@ -89,6 +92,9 @@ class GameTiles extends Component {
       updatedImages.forEach(image => {
         image.picked = false;
       });
+
+      // Update banner to show incorrect choice.
+      bannerText = "Incorrect! You already chose that one.";
 
     // Image has not already been picked.
     } else {
@@ -106,14 +112,19 @@ class GameTiles extends Component {
         updatedImages[j] = temp;
       }
 
-      console.log(updatedImages);
-
       // Update current score.
       updatedScore += 1;
+
+      // Update banner to show correct choice.
+      bannerText = "Correct choice!";
+
     }
     // Update score content in spans
     document.getElementById("score").textContent = updatedScore;
     document.getElementById("high-score").textContent = updatedHighScore;
+
+    // Update banner to reflect correct or incorrect choices.
+    document.getElementById("banner").textContent = bannerText;
     
     // Update state to reflect changes.
     this.setState({

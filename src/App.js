@@ -4,17 +4,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import GameTiles from './Components/GameTiles';
 
-
-
-
 function App() {
   return (
     <div className="App">
       {/* Nav Bar */}
       <Navbar bg="light" expand="lg" sticky="top">
-        <Navbar.Brand href="#home">Memory Game!</Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Navbar.Text>
+        <Navbar.Brand href="/" className="font-weight-bold">Memory Game!</Navbar.Brand>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Text className="mx-auto font-weight-bold">
+            <span id="banner"></span>
+          </Navbar.Text>
+          <Navbar.Text className="font-weight-bold">
             Score: <span id="score">0</span> | High Score: <span id="high-score">0</span>
           </Navbar.Text>
         </Navbar.Collapse>
